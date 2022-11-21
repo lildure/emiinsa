@@ -59,16 +59,16 @@ const Sidebar = () => {
             <NotificationsNoneIcon className="icon" />
             <span>Мэдэгдэл</span>
           </li>
-          <p className="title">SERVICE</p>
-          <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>Тохиргоо</span>
-          </li>
           <p className="title">USER</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
             <span>Хувийн мэдээлэл</span>
           </li>
+          <li>
+            <SettingsApplicationsIcon className="icon" />
+            <span>Тохиргоо</span>
+          </li>
+          <p className="title">LOG</p>
           <li>
             <ExitToAppIcon className="icon" />
             <span>Гарах</span>
