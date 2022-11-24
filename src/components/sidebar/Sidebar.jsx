@@ -6,6 +6,7 @@ import StoreIcon from "@mui/icons-material/Store";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import LibraryAddOutlinedIcon from '@mui/icons-material/LibraryAddOutlined';
 import { Link } from "react-router-dom";
 
 
@@ -25,6 +26,10 @@ const Sidebar = () => {
           <li>
             <DashboardIcon className="icon" />
             <span>Нүүр хуудас</span>
+          </li>
+          <li>
+            <LibraryAddOutlinedIcon className="icon" />
+            <span>Бараа уншуулах</span>
           </li>
           <p className="title">LISTS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
