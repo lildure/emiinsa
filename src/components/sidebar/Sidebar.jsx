@@ -21,7 +21,8 @@ const Sidebar = () => {
       </div>
       <hr />
       <div className="center">
-        <ul>
+        <ul> 
+          {/* Sidebar хэсэнгийн */}
           <p className="title">MAIN</p>
           <li>
             <DashboardIcon className="icon" />
@@ -38,16 +39,18 @@ const Sidebar = () => {
               <span>Хэрэглэгчид</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Бүтээгдэхүүн</span>
             </li>
           </Link>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Жагсаалт</span>
-          </li>
+          <Link to="" style={{ textDecoration: "none" }}>
+            <li>
+              <CreditCardIcon className="icon" />
+              <span>Жагсаалт</span>
+            </li>
+          </Link>
           <p className="title">USER</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />

@@ -12,7 +12,7 @@ const List = () => {
     {
       id: 1143155,
       product: "Acer Nitro 5",
-      img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+      img: "https://euromed.mn/wp-content/uploads/2021/04/6496899016202665212883614001980077875778122306555043906.jpg",
       customer: "John Smith",
       date: "1 March",
       amount: 785,
@@ -63,31 +63,34 @@ const List = () => {
   return (
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        {/* Table нэр */}
         <TableHead>
           <TableRow>
-            <TableCell className="tableCell">Хэрэглэгчийн ID</TableCell>
-            <TableCell className="tableCell">Бүтээгдэхүүн</TableCell>
-            <TableCell className="tableCell">Үйлчилүүлэгч</TableCell>
-            <TableCell className="tableCell">Өдөр</TableCell>
-            <TableCell className="tableCell">Хэмжээ</TableCell>
-            <TableCell className="tableCell">Төлбөрийн нөхцөл</TableCell>
+            <TableCell className="tableimg">Зураг</TableCell> 
+            <TableCell className="tableproduct">Бүтээгдэхүүн</TableCell> 
+            <TableCell className="tableid">Ажилчдийн ID</TableCell>
+            <TableCell className="tablecustomer">Үнэ</TableCell>
+            <TableCell className="tabledate">Өдөр</TableCell>
+            <TableCell className="tablestock">Тоо</TableCell>
+            <TableCell className="tablemethod">Төлбөрийн нөхцөл</TableCell>
             <TableCell className="tableCell">Статус</TableCell>
           </TableRow>
         </TableHead>
+        {/* Table ар нэр*/}
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell className="tableCell">{row.id}</TableCell>
-              <TableCell className="tableCell">
+              <TableCell className="tableimg">
                 <div className="cellWrapper">
                   <img src={row.img} alt="" className="image" />
-                  {row.product}
                 </div>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
+              <TableCell className="tableid">{row.id}</TableCell>
+              <TableCell className="tableproduct">{row.product}</TableCell>
+              <TableCell className="tablecustomer">{row.customer}</TableCell>
+              <TableCell className="tabledate">{row.date}</TableCell>
+              <TableCell className="tablestock">{row.stock}</TableCell>
+              <TableCell className="tablemethod">{row.method}</TableCell>
               <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>

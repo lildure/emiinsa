@@ -9,12 +9,12 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "January", Total: 1200 },
-  { name: "February", Total: 2100 },
-  { name: "March", Total: 800 },
-  { name: "April", Total: 1600 },
-  { name: "May", Total: 900 },
-  { name: "June", Total: 1700 },
+  { name: "1-р сар", Total: 1200 },
+  { name: "2-р сар", Total: 2100 },
+  { name: "3-р сар", Total: 800 },
+  { name: "4-р сар", Total: 1600 },
+  { name: "5-р сар", Total: 900 },
+  { name: "6-р сар", Total: 1700 },
 ];
 
 const Chart = ({ aspect, title }) => {
@@ -26,7 +26,7 @@ const Chart = ({ aspect, title }) => {
           width={730}
           height={250}
           data={data}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          margin={{ top: 15, right: 30, left: 30, bottom: 10 }}
         >
           <defs>
             <linearGradient id="total" x1="0" y1="0" x2="0" y2="1">
