@@ -11,51 +11,51 @@ const List = () => {
   const rows = [
     {
       id: 1143155,
-      product: "Acer Nitro 5",
+      product: "Ципроцин 7мл",
       img: "https://euromed.mn/wp-content/uploads/2021/04/6496899016202665212883614001980077875778122306555043906.jpg",
-      customer: "John Smith",
+      price: 15000,
       date: "1 March",
-      amount: 785,
+      stock: 78,
       method: "Cash on Delivery",
       status: "Approved",
     },
     {
       id: 2235235,
-      product: "Playstation 5",
-      img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "Michael Doe",
+      product: "Dove Baby 200ml Rich Moisture",
+      img: "https://euromed.mn/wp-content/uploads/2021/04/richmoisture-shampoo-fop-1083405.png",
+      price: 7000,
       date: "1 March",
-      amount: 900,
+      stock: 90,
       method: "Online Payment",
       status: "Pending",
     },
     {
       id: 2342353,
-      product: "Redragon S101",
-      img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "John Smith",
+      product: "Виусид 30мл №1",
+      img: "https://euromed.mn/wp-content/uploads/2022/01/2.gif",
+      price: 9100,
       date: "1 March",
-      amount: 35,
+      stock: 35,
       method: "Cash on Delivery",
       status: "Pending",
     },
     {
       id: 2357741,
-      product: "Razer Blade 15",
-      img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "Jane Smith",
+      product: "Аами Таами үзэмтэй нэрстэй үрэл",
+      img: "https://euromed.mn/wp-content/uploads/2021/04/%D0%90%D0%B0%D0%BC%D0%B8-%D0%A2%D0%B0%D0%B0%D0%BC%D0%B8-%D2%AF%D0%B7%D1%8D%D0%BC%D1%82%D1%8D%D0%B9-%D0%BD%D1%8D%D1%80%D1%81%D1%82%D1%8D%D0%B9-%D2%AF%D1%80%D1%8D%D0%BB.jpg",
+      price: 2080,
       date: "1 March",
-      amount: 920,
+      stock: 920,
       method: "Online",
       status: "Approved",
     },
     {
       id: 2342355,
-      product: "ASUS ROG Strix",
-      img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "Harold Carol",
+      product: "off шавжнаас хамгаалах шүршигч",
+      img: "https://euromed.mn/wp-content/uploads/2022/06/extreme.gif",
+      price: 11500,
       date: "1 March",
-      amount: 2000,
+      stock: 20,
       method: "Online",
       status: "Pending",
     },
@@ -67,15 +67,16 @@ const List = () => {
         <TableHead>
           <TableRow>
             <TableCell className="tableimg">Зураг</TableCell> 
-            <TableCell className="tableproduct">Бүтээгдэхүүн</TableCell> 
-            <TableCell className="tableid">Ажилчдийн ID</TableCell>
-            <TableCell className="tablecustomer">Үнэ</TableCell>
+            <TableCell className="tableproduct">SKU код</TableCell> 
+            <TableCell className="tableid">Нэр</TableCell>
+            <TableCell className="tableprice">Үнэ</TableCell>
             <TableCell className="tabledate">Өдөр</TableCell>
-            <TableCell className="tablestock">Тоо</TableCell>
+            <TableCell className="tablestock">Үлдэгдэл</TableCell>
             <TableCell className="tablemethod">Төлбөрийн нөхцөл</TableCell>
             <TableCell className="tableCell">Статус</TableCell>
           </TableRow>
         </TableHead>
+        
         {/* Table ар нэр*/}
         <TableBody>
           {rows.map((row) => (
@@ -87,7 +88,7 @@ const List = () => {
               </TableCell>
               <TableCell className="tableid">{row.id}</TableCell>
               <TableCell className="tableproduct">{row.product}</TableCell>
-              <TableCell className="tablecustomer">{row.customer}</TableCell>
+              <TableCell className="tableprice">{row.price}</TableCell>
               <TableCell className="tabledate">{row.date}</TableCell>
               <TableCell className="tablestock">{row.stock}</TableCell>
               <TableCell className="tablemethod">{row.method}</TableCell>

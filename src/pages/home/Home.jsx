@@ -23,7 +23,7 @@ const Home = () => {
           <Chart title="Сүүлийн 6 сарын (орлого)" aspect={2 / 1} />
         </div>
         <div className="listContainer">
-          <div className="listTitle">Эмийн сан</div>
+          <div className="listTitle">Их борлуулалтай бараанууд</div>
           <Table />
         </div>
       </div>

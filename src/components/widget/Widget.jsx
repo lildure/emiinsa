@@ -9,15 +9,15 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 100;
-  const diff = 20;
+  const amount = 200;
+  const diff = 10;
 
   switch (type) {
     case "user":
       data = {
-        title: "USERS",
+        title: "Ажилчид",
         isMoney: false,
-        link: "See all users",
+        link: "Бүгдийн харах",
         icon: (
           <PersonOutlinedIcon
             className="icon"
@@ -31,9 +31,9 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "Захилга",
         isMoney: false,
-        link: "View all orders",
+        link: "Бүх захилга",
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
@@ -47,9 +47,9 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
+        title: "Орлого",
         isMoney: true,
-        link: "View net earnings",
+        link: "Бүх орлого",
         icon: (
           <MonetizationOnOutlinedIcon
             className="icon"
@@ -60,9 +60,9 @@ const Widget = ({ type }) => {
       break;
     case "balance":
       data = {
-        title: "BALANCE",
+        title: "Баланс",
         isMoney: true,
-        link: "See details",
+        link: "Дэлгэрэнгүй харах",
         icon: (
           <AccountBalanceWalletOutlinedIcon
             className="icon"
