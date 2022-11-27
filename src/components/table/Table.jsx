@@ -64,15 +64,15 @@ const List = () => {
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         {/* Table нэр */}
-        <TableHead>
+        <TableHead className="tablefont">
           <TableRow>
-            <TableCell className="tableimg">Зураг</TableCell> 
-            <TableCell className="tableproduct">SKU код</TableCell> 
-            <TableCell className="tableid">Нэр</TableCell>
-            <TableCell className="tableprice">Үнэ</TableCell>
-            <TableCell className="tabledate">Өдөр</TableCell>
-            <TableCell className="tablestock">Үлдэгдэл</TableCell>
-            <TableCell className="tablemethod">Төлбөрийн нөхцөл</TableCell>
+            <TableCell className="tableCell">Зураг</TableCell> 
+            <TableCell className="tableCell">SKU код</TableCell> 
+            <TableCell className="tableCell">Нэр</TableCell>
+            <TableCell className="tableCell">Үнэ</TableCell>
+            <TableCell className="tableCell">Өдөр</TableCell>
+            <TableCell className="tableCell">Үлдэгдэл</TableCell>
+            <TableCell className="tableCell">Төлбөрийн нөхцөл</TableCell>
             <TableCell className="tableCell">Статус</TableCell>
           </TableRow>
         </TableHead>
@@ -86,12 +86,12 @@ const List = () => {
                   <img src={row.img} alt="" className="image" />
                 </div>
               </TableCell>
-              <TableCell className="tableid">{row.id}</TableCell>
-              <TableCell className="tableproduct">{row.product}</TableCell>
-              <TableCell className="tableprice">{row.price}</TableCell>
-              <TableCell className="tabledate">{row.date}</TableCell>
-              <TableCell className="tablestock">{row.stock}</TableCell>
-              <TableCell className="tablemethod">{row.method}</TableCell>
+              <TableCell className="tableCell">{row.id}</TableCell>
+              <TableCell className="tableCell">{row.product}</TableCell>
+              <TableCell className="tableCell">{row.price}</TableCell>
+              <TableCell className="tableCell">{row.date}</TableCell>
+              <TableCell className="tableCell">{row.stock}</TableCell>
+              <TableCell className="tableCell">{row.method}</TableCell>
               <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>

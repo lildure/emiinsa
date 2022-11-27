@@ -27,8 +27,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <img
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
+              src="https://scontent.fuln8-1.fna.fbcdn.net/v/t39.30808-6/278968686_1901202163407089_1361302335978599199_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=qRoq5YbmBHgAX9gRoIv&_nc_ht=scontent.fuln8-1.fna&oh=00_AfBYM9W3_tZGnZIatOrMfHf3HAGgvzyH-Tj_h2HEIREpdA&oe=63896FA8"
               className="avatar"
             />
           </div>

@@ -12,11 +12,11 @@ const Single = () => {
         <Navbar />
         <div className="top">
           <div className="left">
-            <div className="editButton">Edit</div>
-            <h1 className="title">Information</h1>
+            <div className="editButton">засах</div>
+            <h1 className="title">Мэдээлэл</h1>
             <div className="item">
               <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                src="https://scontent.fuln8-1.fna.fbcdn.net/v/t39.30808-6/278968686_1901202163407089_1361302335978599199_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=qRoq5YbmBHgAX9gRoIv&_nc_ht=scontent.fuln8-1.fna&oh=00_AfBYM9W3_tZGnZIatOrMfHf3HAGgvzyH-Tj_h2HEIREpdA&oe=63896FA8"
                 alt=""
                 className="itemImg"
               />
@@ -44,11 +44,11 @@ const Single = () => {
             </div>
           </div>
           <div className="right">
-            <Chart aspect={3 / 1} title="User Spending ( Last 6 Months)" />
+            <Chart aspect={3 / 1} title="Ажилчны зарцуулалт (Сүүлийн 6 сар)" />
           </div>
         </div>
         <div className="bottom">
-        <h1 className="title">Last Transactions</h1>
+        <h1 className="title">Их борлуулалтай бараанууд</h1>
           <List/>
         </div>
       </div>
