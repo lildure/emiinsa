@@ -8,7 +8,7 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 const Widget = ({ type }) => {
   let data;
 
-  //temporary
+  //Толгой хэсэг
   const amount = 200;
   const diff = 10;
 

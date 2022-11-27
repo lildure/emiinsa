@@ -39,7 +39,7 @@ const Sidebar = () => {
               <span>Хэрэглэгчид</span>
             </li>
           </Link>
-          <Link to="" style={{ textDecoration: "none" }}>
+          <Link to="/list" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Бүтээгдэхүүн</span>
